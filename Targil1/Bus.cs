@@ -51,5 +51,10 @@ namespace Targil1
                 }
             }
         }
+
+        public override string ToString()
+        {
+            return String.Format("[ {0}, {1} ]", Registration, aliya.Date);
+        }
     }
 }

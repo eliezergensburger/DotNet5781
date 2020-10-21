@@ -16,6 +16,8 @@ namespace Targil1
             bool success = true;
             do
             {
+                Console.WriteLine("Please, make your choce:");
+                Console.WriteLine("ADD_BUS, PICK_BUS, REFUEL_BUS, MAINTENANCE_BUS,  EXIT");
 
                 success = Enum.TryParse(Console.ReadLine(), out choice);
                 if (!success)
@@ -25,25 +27,25 @@ namespace Targil1
                 switch (choice)
                 {
                     case CHOICE.ADD_BUS:
-                        Console.WriteLine("rishuy: ");
-                        string rishuy = Console.ReadLine();
                         Console.WriteLine("taarich");
                         DateTime taarich;
                         success = DateTime.TryParse(Console.ReadLine(), out taarich);
                         if (!success)
                         {
-                            Console.WriteLine("Error"); 
+                            Console.WriteLine("Error");
                             continue;
                         }
+                        Console.WriteLine("rishuy: ");
+                        string rishuy = Console.ReadLine();
                         try
                         {
                             buses.Add(new Bus(rishuy, taarich));
-
+                            printall(buses);
                         }
                         catch (Exception baaya)
                         {
                             Console.WriteLine(baaya.Message);
-                        }                      
+                        }
                         //TODO
                         break;
                     case CHOICE.PICK_BUS:
@@ -52,13 +54,21 @@ namespace Targil1
                         break;
                     case CHOICE.MAINTENANCE_BUS:
                         break;
-                    case CHOICE.EXIT:
-                        break;
+                    //case CHOICE.EXIT: //-1
+                    //    break;
                     default:
                         break;
                 }
 
             } while (choice != CHOICE.EXIT);
+        }
+
+        private static void printall(List<Bus> buses)
+        {
+            foreach (Bus bus in buses)
+            {
+                Console.WriteLine(bus);
+            }
         }
     }
 }
