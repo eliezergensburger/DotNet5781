@@ -7,6 +7,7 @@ namespace Targil1
         private string registration;
         private DateTime aliya;
 
+ 
         public Bus(string registration, DateTime aliya)
         {
             this.aliya = aliya;
@@ -18,20 +19,7 @@ namespace Targil1
             //  get => regisration;
             get 
             {
-                string prefix, middle, suffix;
-                if(aliya.Year < 2018)
-                {
-                    prefix = registration.Substring(0, 2);
-                    middle = registration.Substring(2, 3);
-                    suffix = registration.Substring(5, 2);
-                }
-                else
-                {
-                    prefix = registration.Substring(0, 3);
-                    middle = registration.Substring(3, 2);
-                    suffix = registration.Substring(5, 3);
-                }
-                return  String.Format("{0}-{1}-{2}", prefix, middle, suffix);
+                return registration;
             }
 
             private set
@@ -54,7 +42,22 @@ namespace Targil1
 
         public override string ToString()
         {
-            return String.Format("[ {0}, {1} ]", Registration, aliya.Date);
+            string prefix, middle, suffix;
+            if (aliya.Year < 2018)
+            {
+                prefix = registration.Substring(0, 2);
+                middle = registration.Substring(2, 3);
+                suffix = registration.Substring(5, 2);
+            }
+            else
+            {
+                prefix = registration.Substring(0, 3);
+                middle = registration.Substring(3, 2);
+                suffix = registration.Substring(5, 3);
+            }
+           string registrationString = String.Format("{0}-{1}-{2}", prefix, middle, suffix);
+
+           return String.Format("[ {0}, {1} ]", registrationString, aliya.ToShortDateString());
         }
     }
 }
