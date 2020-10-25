@@ -12,6 +12,13 @@ namespace Targil1
     {
         static void Main(string[] args)
         {
+            Point p1 = new Point { Y = 6, X = 8 };
+            Point p2 = new Point { X = 10, Y = -99 };
+            //Egged();
+        }
+
+        private static void Egged()
+        {
             List<Bus> buses = new List<Bus>
             {
                new Bus("2233322",new DateTime(2000,11,11)),
@@ -40,15 +47,15 @@ namespace Targil1
                 {
                     case CHOICE.ADD_BUS:
                         insertBus(buses);
-                         //TODO
+                        //TODO
                         break;
                     case CHOICE.PICK_BUS:
                         printall(buses);
                         string registration = Console.ReadLine();
-                        Bus bus = findBuses(buses,registration);
-                        if(bus != null)
+                        Bus bus = findBuses(buses, registration);
+                        if (bus != null)
                         {
-                            Console.WriteLine("the bus is {0} ",bus);
+                            Console.WriteLine("the bus is {0} ", bus);
                         }
                         else
                         {
@@ -74,8 +81,8 @@ namespace Targil1
 
             Bus bus = null;
             foreach (Bus item in buses)
-            {         
-                if(item.Registration==registration)
+            {
+                if (item.Registration == registration)
                 {
                     bus = item;
                 }

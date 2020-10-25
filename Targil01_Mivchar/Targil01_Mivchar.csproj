@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BF803060-5A8D-4537-9F41-3D831D5E0CB4}</ProjectGuid>
+    <ProjectGuid>{83877016-4369-417A-A1A5-9E8672516DE5}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Targil1</RootNamespace>
-    <AssemblyName>Targil1</AssemblyName>
+    <RootNamespace>Targil01_Mivchar</RootNamespace>
+    <AssemblyName>Targil01_Mivchar</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -45,7 +45,6 @@
   <ItemGroup>
     <Compile Include="Bus.cs" />
     <Compile Include="Enumim.cs" />
-    <Compile Include="Point.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -6,7 +6,7 @@ namespace Targil1
     {
         private string registration;
         private DateTime aliya;
-
+       
  
         public Bus(string registration, DateTime aliya)
         {
