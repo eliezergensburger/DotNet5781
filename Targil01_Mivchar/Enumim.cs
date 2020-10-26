@@ -8,6 +8,6 @@ namespace Targil01_Mivchar
 {
     public enum CHOICE
     {
-      ADD_BUS, PICK_BUS, REFUEL_BUS, MAINTENANCE_BUS,  EXIT=-1
+      ADD, FIND, REFUEL, CHECKUP,  EXIT=-1
     }
 }

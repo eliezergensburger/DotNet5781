@@ -20,8 +20,7 @@ namespace Targil01_Mivchar
             {
                 do
                 {
-                    Console.WriteLine(@" pick your choice:
-                                        ADD_BUS, PICK_BUS, REFUEL_BUS, MAINTENANCE_BUS,  EXIT ");
+                    Console.WriteLine(" pick your choice:ADD, FIND, REFUEL, CHECKUP,  EXIT=-1 ");
                     string kelet = Console.ReadLine();
                     success = Enum.TryParse(kelet, out choice);
                     if (!success)
@@ -32,7 +31,7 @@ namespace Targil01_Mivchar
                 while (success == false);
                 switch (choice)
                 {
-                    case CHOICE.ADD_BUS:
+                    case CHOICE.ADD:
                         Console.WriteLine("ten li pratim");
                         string rishuy;
                         DateTime taarich;
@@ -57,11 +56,11 @@ namespace Targil01_Mivchar
                             } 
                         }
                         break;
-                    case CHOICE.PICK_BUS:
+                    case CHOICE.FIND:
                         break;
-                    case CHOICE.REFUEL_BUS:
+                    case CHOICE.REFUEL:
                         break;
-                    case CHOICE.MAINTENANCE_BUS:
+                    case CHOICE.CHECKUP:
                         break;
                     case CHOICE.EXIT:
                         break;
