@@ -66,8 +66,11 @@ namespace Targil1_Tal
         public Bus()
         {
             Console.WriteLine("give Starting date");
-            bool succcess = DateTime.TryParse(Console.ReadLine(), out StartingDate);
-
+            bool success = DateTime.TryParse(Console.ReadLine(), out StartingDate);
+            if (success == false)
+            {
+                throw new Exception("invalid DateTime string format");
+            }
             Console.WriteLine("give license number");
             License = Console.ReadLine();
 
