@@ -9,9 +9,21 @@ namespace Targil1_Tal
 
         public readonly DateTime StartingDate;
         private string license;
+        private int km;
 
         public DateTime Checkup { get; private set; }
         public int Fuel { get; set; }
+ 
+        public int Km
+        {
+            get { return km; }
+            set {
+                if (value >= 0)
+                {
+                    km = value;
+                }
+            }
+        }
 
         public string License
         {
