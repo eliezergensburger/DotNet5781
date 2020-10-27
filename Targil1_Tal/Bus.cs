@@ -5,20 +5,13 @@ namespace Targil1_Tal
     public class Bus
     {
         static public int GlobalKM { get; private set; }
+        const int FULLTANK = 1200;
+
         public readonly DateTime StartingDate;
-        public DateTime Checkup { get; private set; }
         private string license;
 
-        public DateTime Maintenance()
-        {
-            Checkup = DateTime.Today;
-            return Checkup;
-        }
-        public DateTime Maintenance(DateTime checkup)
-        {
-            Checkup = checkup;
-            return Checkup;
-        }
+        public DateTime Checkup { get; private set; }
+        public int Fuel { get; set; }
 
         public string License
         {
@@ -42,14 +35,14 @@ namespace Targil1_Tal
                     endpart = license.Substring(5, 3);
                     result = String.Format("{0}-{1}-{2}", firstpart, middlepart, endpart);
                 }
-                return result; 
+                return result;
             }
 
-            private set 
-            { 
-                if((StartingDate.Year < 2018  && value.Length == 7) ||(StartingDate.Year >= 2018 && value.Length == 8))
+            private set
+            {
+                if ((StartingDate.Year < 2018 && value.Length == 7) || (StartingDate.Year >= 2018 && value.Length == 8))
                 {
-                     license = value; 
+                    license = value;
                 }
                 else
                 {
@@ -67,5 +60,27 @@ namespace Targil1_Tal
             License = Console.ReadLine();
 
         }
+
+        public override string ToString()
+        {
+            return String.Format("license is: {0,-10}, starting date: {1}", License, StartingDate);
+        }
+        public DateTime Maintenance()
+        {
+            Checkup = DateTime.Today;
+            return Checkup;
+        }
+        public DateTime Maintenance(DateTime checkup)
+        {
+            Checkup = checkup;
+            return Checkup;
+        }
+
+        public void Refuelling(int fuel)
+        {
+            Fuel = FULLTANK;
+        }
+
+
     }
 }
