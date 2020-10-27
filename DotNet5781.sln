@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Targil01_Mivchar", "Targil0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Targil1Lev", "Targil1Lev\Targil1Lev.csproj", "{4DAAFD42-B9DE-492F-AC20-0B795175499E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Targil1_Tal", "Targil1_Tal\Targil1_Tal.csproj", "{FCEA2BA8-2798-422F-AFA0-4F674E12F6AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{4DAAFD42-B9DE-492F-AC20-0B795175499E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4DAAFD42-B9DE-492F-AC20-0B795175499E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4DAAFD42-B9DE-492F-AC20-0B795175499E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCEA2BA8-2798-422F-AFA0-4F674E12F6AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCEA2BA8-2798-422F-AFA0-4F674E12F6AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCEA2BA8-2798-422F-AFA0-4F674E12F6AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCEA2BA8-2798-422F-AFA0-4F674E12F6AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
