@@ -13,18 +13,17 @@ namespace Targil1_Tal
 
         public DateTime Checkup { get; private set; }
         public int Fuel { get; set; }
- 
         public int Km
         {
             get { return km; }
-            set {
+            set
+            {
                 if (value >= 0)
                 {
                     km = value;
                 }
             }
         }
-
         public string License
         {
             get
