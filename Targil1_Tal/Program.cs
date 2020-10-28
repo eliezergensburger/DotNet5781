@@ -13,6 +13,11 @@ namespace Targil1_Tal
             List<Bus> buses = new List<Bus>();
             ACTION action;
             bool success;
+            SartEgged(buses, out action, out success);
+        }
+
+        private static void SartEgged(List<Bus> buses, out ACTION action, out bool success)
+        {
             do
             {
                 do
