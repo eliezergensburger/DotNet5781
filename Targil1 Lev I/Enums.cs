@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Targil1Lev
+namespace Targil1_Lev_II
 {
     public enum OPERATION
     {

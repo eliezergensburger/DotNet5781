@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Targil1_Lev_I
+namespace Targil1_Lev_II
 {
     public class Bus
     {
