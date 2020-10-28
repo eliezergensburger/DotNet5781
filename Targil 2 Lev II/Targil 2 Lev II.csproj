@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BF803060-5A8D-4537-9F41-3D831D5E0CB4}</ProjectGuid>
+    <ProjectGuid>{93A54159-D501-4A49-8A9E-2A969DA63A18}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Targil1</RootNamespace>
-    <AssemblyName>Targil1</AssemblyName>
+    <RootNamespace>Targil_2_Lev_II</RootNamespace>
+    <AssemblyName>Targil 2 Lev II</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,8 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bus.cs" />
-    <Compile Include="Enumim.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

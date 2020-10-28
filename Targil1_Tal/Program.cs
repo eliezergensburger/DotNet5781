@@ -38,6 +38,7 @@ namespace Targil1_Tal
                         {
                             Console.WriteLine(exception.Message);
                         }
+                        //print all buses
                         foreach (Bus bus in buses)
                         {
                             Console.WriteLine(bus);

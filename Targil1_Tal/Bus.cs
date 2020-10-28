@@ -5,7 +5,7 @@ namespace Targil1_Tal
     public class Bus
     {
         static public int GlobalKM { get; private set; }
-        const int FULLTANK = 1200;
+        private const int FULLTANK = 1200;
 
         public readonly DateTime StartingDate;
         private string license;

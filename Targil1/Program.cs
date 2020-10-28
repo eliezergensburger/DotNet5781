@@ -12,9 +12,7 @@ namespace Targil1
     {
         static void Main(string[] args)
         {
-            Point p1 = new Point { Y = 6, X = 8 };
-            Point p2 = new Point { X = 10, Y = -99 };
-            //Egged();
+                Egged();
         }
 
         private static void Egged()
