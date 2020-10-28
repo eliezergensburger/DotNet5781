@@ -73,7 +73,6 @@ namespace Targil1_Tal
             }
             Console.WriteLine("give license number");
             License = Console.ReadLine();
-
         }
 
         public override string ToString()
