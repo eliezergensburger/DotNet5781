@@ -45,6 +45,21 @@ namespace Targil1_Tal
                         }
                         break;
                     case ACTION.PICK_BUS:
+                        Console.WriteLine("enter a license number");
+                        string license = Console.ReadLine().Replace("-", String.Empty);
+                        Bus foundBus = null;
+                        foreach (Bus bus in buses)
+                        {
+                            if(bus.License == license)
+                            {
+                                foundBus = bus;
+                                break;
+                            }
+                        }
+                        if(foundBus != null)
+                        {
+                            Console.WriteLine(foundBus);
+                        }
                         break;
                     case ACTION.MAINTENANCE:
                         break;

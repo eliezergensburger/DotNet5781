@@ -28,25 +28,30 @@ namespace Targil1_Tal
         {
             get
             {
-                string firstpart, middlepart, endpart;
-                string result;
-                if (license.Length == 7)
-                {
-                    // xx-xxx-xx
-                    firstpart = license.Substring(0, 2);
-                    middlepart = license.Substring(2, 3);
-                    endpart = license.Substring(5, 2);
-                    result = String.Format("{0}-{1}-{2}", firstpart, middlepart, endpart);
-                }
-                else
-                {
-                    // xxx-xx-xxx
-                    firstpart = license.Substring(0, 3);
-                    middlepart = license.Substring(3, 2);
-                    endpart = license.Substring(5, 3);
-                    result = String.Format("{0}-{1}-{2}", firstpart, middlepart, endpart);
-                }
-                return result;
+                /**
+                 * this part had beem moved to ToString() method
+                 */
+
+                //string firstpart, middlepart, endpart;
+                //string result;
+                //if (license.Length == 7)
+                //{
+                //    // xx-xxx-xx
+                //    firstpart = license.Substring(0, 2);
+                //    middlepart = license.Substring(2, 3);
+                //    endpart = license.Substring(5, 2);
+                //    result = String.Format("{0}-{1}-{2}", firstpart, middlepart, endpart);
+                //}
+                //else
+                //{
+                //    // xxx-xx-xxx
+                //    firstpart = license.Substring(0, 3);
+                //    middlepart = license.Substring(3, 2);
+                //    endpart = license.Substring(5, 3);
+                //    result = String.Format("{0}-{1}-{2}", firstpart, middlepart, endpart);
+                //}
+                //return result;
+                return license;
             }
 
             private set
@@ -76,8 +81,27 @@ namespace Targil1_Tal
 
         public override string ToString()
         {
-            return String.Format("license is: {0,-10}, starting date: {1}", License, StartingDate);
+            string firstpart, middlepart, endpart;
+            string formattedLicense;
+            if (license.Length == 7)
+            {
+                // xx-xxx-xx
+                firstpart = license.Substring(0, 2);
+                middlepart = license.Substring(2, 3);
+                endpart = license.Substring(5, 2);
+                formattedLicense = String.Format("{0}-{1}-{2}", firstpart, middlepart, endpart);
+            }
+            else
+            {
+                // xxx-xx-xxx
+                firstpart = license.Substring(0, 3);
+                middlepart = license.Substring(3, 2);
+                endpart = license.Substring(5, 3);
+                formattedLicense = String.Format("{0}-{1}-{2}", firstpart, middlepart, endpart);
+            }
+             return String.Format("license is: {0,-10}, starting date: {1}", formattedLicense, StartingDate);
         }
+
         public DateTime Maintenance()
         {
             Checkup = DateTime.Today;
