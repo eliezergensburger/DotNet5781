@@ -44,6 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bus.cs" />
+    <Compile Include="BusException.cs" />
+    <Compile Include="BusLineRoute.cs" />
+    <Compile Include="BusLineStation.cs" />
     <Compile Include="BusStop.cs" />
     <Compile Include="Enumin.cs" />
     <Compile Include="Program.cs" />

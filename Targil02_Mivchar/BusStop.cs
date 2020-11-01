@@ -61,6 +61,16 @@ namespace Targil02_Mivchar
                 }
             }
         }
+        public String Address { get; set; }
 
+        public override string ToString()
+        {
+            String result = String.Format(
+                "------Bus Station {0} ------ \n" +
+                "Longitude: {1} N" +
+                "Latitude: {2} E ", BusStationKey, Longitude, Latitude);
+
+            return result;
+        }
     }
 }

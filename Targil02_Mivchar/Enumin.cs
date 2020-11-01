@@ -10,4 +10,8 @@ namespace Targil02_Mivchar
     {
         ADD,DELETE,FIND,PRINT,EXIT= -1
     }
+    public enum Area
+    {
+        GENERAL,NORTH,SOUTH,CENTER,JERUSALEM
+    }
 }
