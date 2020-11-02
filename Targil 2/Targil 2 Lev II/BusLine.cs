@@ -14,14 +14,15 @@ namespace Targil_2_Lev_II
 
         public List<BusStopLine> Stations
         {
-            get { 
+            get
+            {
                 return stations;
             }
-         }
+        }
         public Area Area { get; set; }
 
         public BusStopLine FirstStation { get => Stations[0]; set => Stations[0] = value; }
-        public BusStopLine LastStation { get => Stations[stations.Count-1]; set => Stations[stations.Count - 1] = value; }
+        public BusStopLine LastStation { get => Stations[stations.Count - 1]; set => Stations[stations.Count - 1] = value; }
 
     }
 }
