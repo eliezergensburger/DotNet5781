@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace Targil_2_Lev_II
 {
-    class Program
+    public enum Area
     {
-        static void Main(string[] args)
-        {
-
-        }
+        Central,Jerusalem,North,South,Center
     }
 }

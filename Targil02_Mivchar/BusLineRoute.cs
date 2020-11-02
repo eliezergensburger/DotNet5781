@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,5 +26,8 @@ namespace Targil02_Mivchar
         }
 
         public Area Area { get; set; }
+
+        public BusLineStation this[int index] => stations[index];
+
     }
 }

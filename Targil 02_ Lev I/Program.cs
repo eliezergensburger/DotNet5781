@@ -4,13 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Targil_2_Lev_II
+namespace Targil_02__Lev_I
 {
     class Program
     {
         static void Main(string[] args)
         {
-
         }
     }
 }
