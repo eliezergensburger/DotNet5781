@@ -11,5 +11,13 @@ namespace Targil02_Tal_DotNetLab
             get { return busstations; }
         }
 
+        /// <summary>
+        /// Line number
+        /// </summary>
+        public int Number { get; set; }
+        public BusStation FirstStation { get; set; }
+        public BusStation LastStation { get; set; }
+        public Zone Zone { get; set; }
+
     }
 }
