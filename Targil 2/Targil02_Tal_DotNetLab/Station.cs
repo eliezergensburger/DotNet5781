@@ -17,38 +17,32 @@ namespace Targil02_Tal_DotNetLab
         private static List<int> serials = new List<int>();
 
         private int busStationKey;
+        private double latitude;
+        private double longitude;
 
         /// <summary>
-        /// key value should  be uniwue and max 6 digits
+        /// key value should  be unique and max 6 digits
         /// </summary>
         public int BusStationKey
         {
             get { return busStationKey; }
+            
             set
             {
-                if (value > 0 && value < MAXDIGITS)
-                {
-                    if (serials.Contains(value))
-                    {
-                        throw new ArgumentException(
-                            String.Format("{0} key number exists allready", value));
-                    }
-                    busStationKey = value;
-                    serials.Add(BusStationKey);
-                }
-                else
+                if (serials.Contains(value))
                 {
                     throw new ArgumentException(
-                        String.Format("{0} is not a valid key number", value));
+                        String.Format("{0} key number exists allready", value));
                 }
-
-
-            }
+                if (value <= 0 && value >= MAXDIGITS)
+                {
+                    throw new ArgumentException(
+                       String.Format("{0} is not a valid key number", value));
+                }
+                    busStationKey = value;
+                    serials.Add(BusStationKey);
+             }
         }
-
-        private double latitude;
-        private double longitude;
-
 
         public double Latitude
         {

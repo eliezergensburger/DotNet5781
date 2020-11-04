@@ -11,6 +11,8 @@ namespace Targil02_Tal_DotNetLab
         static void Main(string[] args)
         {
             BusCompany egged = new BusCompany();
+            Random r = new Random();
+            double stam = r.NextDouble() * (33.3 - 31 -1) + 31;
         }
     }
 }

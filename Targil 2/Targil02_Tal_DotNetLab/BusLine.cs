@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 
@@ -7,17 +8,22 @@ namespace Targil02_Tal_DotNetLab
     public class BusLine
     {
         private List<BusStation> busstations = new List<BusStation>();
+        public List<BusStation> BusStations
+        {
+            get
+            {
+                List<BusStation> temp = new List<BusStation>(busstations);
+                return temp;
+            }
+        }
+
+        //public readonly List<BusStation> busStations;
 
         public BusLine()
         {
-
+            //busStations = new List<BusStation>();
         }
-        public List<BusStation> BusStations
-        {
-            get { return busstations; }
-        }
-
-        /// <summary>
+         /// <summary>
         /// Line number
         /// </summary>
         public int Number { get; set; }
@@ -37,21 +43,22 @@ namespace Targil02_Tal_DotNetLab
         }
         public void Add(int index, BusStation busStation)
         {
-            bool last = false;
-            if (index == busstations.Count - 1)
-            {
-                last = true;
-            }
-            busstations.Insert(index, busStation);
-            if (last)
-            {
-                LastStation = busstations[busstations.Count - 1];
-            }
             if (index == 0)
             {
-                FirstStation = busstations[0];
+                AddFirst(busStation);
             }
-        }
-
+            else
+            {
+                if(index > busstations.Count)
+                {
+                    throw new ArgumentOutOfRangeException("index", "index should be less than or equal to" + busstations.Count);
+                }
+                if (index == busstations.Count)
+                {
+                    busstations.Insert(index, busStation);
+                    LastStation = busstations[busstations.Count - 1];
+                }
+             }
+         }
     }
 }
