@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace Tragil_3b
+namespace Targil_3b
 {
     /// <summary>
     /// Interaction logic for App.xaml

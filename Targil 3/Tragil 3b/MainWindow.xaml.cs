@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Tragil_3b
+namespace Targil_3b
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

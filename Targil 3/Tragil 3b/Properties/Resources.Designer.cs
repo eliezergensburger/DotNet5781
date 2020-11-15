@@ -9,7 +9,7 @@
 //------------------------------------------------------------------------------
 
 
-namespace Tragil_3b.Properties
+namespace Targil_3b.Properties
 {
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
