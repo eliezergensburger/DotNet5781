@@ -27,6 +27,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Targil02_Tal_DotNetLab", "T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Targil02_Mivchar", "Targil 2\Targil02_Mivchar\Targil02_Mivchar.csproj", "{64D3F831-9AC1-439F-B575-58E196D2BACA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tragil3A_Mivchar", "Targil 3\Tragil3A_Mivchar\Tragil3A_Mivchar.csproj", "{FF6CE7DD-A399-4431-AAF9-C74B6BFAAD86}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Targil 3", "Targil 3", "{86A0FA1C-C633-4B0B-8EA7-AEF0DB4172AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,10 @@ Global
 		{64D3F831-9AC1-439F-B575-58E196D2BACA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64D3F831-9AC1-439F-B575-58E196D2BACA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64D3F831-9AC1-439F-B575-58E196D2BACA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF6CE7DD-A399-4431-AAF9-C74B6BFAAD86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF6CE7DD-A399-4431-AAF9-C74B6BFAAD86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF6CE7DD-A399-4431-AAF9-C74B6BFAAD86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF6CE7DD-A399-4431-AAF9-C74B6BFAAD86}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -83,6 +91,7 @@ Global
 		{93A54159-D501-4A49-8A9E-2A969DA63A18} = {65F4CFEC-129D-4D37-A7C3-88D328642FBC}
 		{1F53A34B-E11A-4384-AF93-64E1C86CAF21} = {65F4CFEC-129D-4D37-A7C3-88D328642FBC}
 		{64D3F831-9AC1-439F-B575-58E196D2BACA} = {65F4CFEC-129D-4D37-A7C3-88D328642FBC}
+		{FF6CE7DD-A399-4431-AAF9-C74B6BFAAD86} = {86A0FA1C-C633-4B0B-8EA7-AEF0DB4172AB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {51DF245D-FAFF-479D-9D60-ECEBD49AB202}
