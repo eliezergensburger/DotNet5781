@@ -33,6 +33,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Targil 3", "Targil 3", "{86
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tragil 3b", "Targil 3\Tragil 3b\Tragil 3b.csproj", "{AB0045D9-4005-483A-B6EC-F0AC16A3D7AB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Targil3a_Lev", "Targil 3\Targil3a_Lev\Targil3a_Lev.csproj", "{7287A87A-011A-4B44-910A-6E432689CB91}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +85,10 @@ Global
 		{AB0045D9-4005-483A-B6EC-F0AC16A3D7AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB0045D9-4005-483A-B6EC-F0AC16A3D7AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB0045D9-4005-483A-B6EC-F0AC16A3D7AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7287A87A-011A-4B44-910A-6E432689CB91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7287A87A-011A-4B44-910A-6E432689CB91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7287A87A-011A-4B44-910A-6E432689CB91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7287A87A-011A-4B44-910A-6E432689CB91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -99,6 +105,7 @@ Global
 		{64D3F831-9AC1-439F-B575-58E196D2BACA} = {65F4CFEC-129D-4D37-A7C3-88D328642FBC}
 		{FF6CE7DD-A399-4431-AAF9-C74B6BFAAD86} = {86A0FA1C-C633-4B0B-8EA7-AEF0DB4172AB}
 		{AB0045D9-4005-483A-B6EC-F0AC16A3D7AB} = {86A0FA1C-C633-4B0B-8EA7-AEF0DB4172AB}
+		{7287A87A-011A-4B44-910A-6E432689CB91} = {86A0FA1C-C633-4B0B-8EA7-AEF0DB4172AB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {51DF245D-FAFF-479D-9D60-ECEBD49AB202}
