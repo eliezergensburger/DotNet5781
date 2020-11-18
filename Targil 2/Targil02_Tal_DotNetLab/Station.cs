@@ -89,5 +89,6 @@ namespace Targil02_Tal_DotNetLab
                 Math.Abs(Longitude), (Longitude > 0) ? "E" : "W");
             return result;
         }
+      
     }
 }

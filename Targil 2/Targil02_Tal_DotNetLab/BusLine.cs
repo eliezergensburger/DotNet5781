@@ -27,7 +27,7 @@ namespace Targil02_Tal_DotNetLab
         public int Number { get; set; }
         public BusStation FirstStation { get; private set; }
         public BusStation LastStation { get; private set; }
-        public Zone Zone { get; set; }
+        public Area Zone { get; set; }
 
         public void AddLast(BusStation busStation)
         {

@@ -37,10 +37,10 @@ namespace Tragil3A_Mivchar
         {
             buslines = new List<Bus>()
         {
-            new Bus { Mispar =39 , StartYear= DateTime.Now ,Area = Zone.JERUSALEM},
-            new Bus { Mispar =1 , StartYear= DateTime.Now,Area = Zone.JERUSALEM},
-           new Bus { Mispar =10 , StartYear= DateTime.Now,Area = Zone.GENERAL},
-           new Bus { Mispar =400 , StartYear= DateTime.Now.AddYears(-1),Area = Zone.CENTER}
+            new Bus { Mispar =39 , StartYear= DateTime.Now ,Area = Area.JERUSALEM},
+            new Bus { Mispar =1 , StartYear= DateTime.Now,Area = Area.JERUSALEM},
+           new Bus { Mispar =10 , StartYear= DateTime.Now,Area = Area.GENERAL},
+           new Bus { Mispar =400 , StartYear= DateTime.Now.AddYears(-1),Area = Area.CENTER}
 
         };
         }

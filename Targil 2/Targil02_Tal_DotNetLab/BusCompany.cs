@@ -6,15 +6,12 @@ namespace Targil02_Tal_DotNetLab
 {
     public class BusCompany : IEnumerable<Bus>
     {
+        #region private fields
         private List<int> numbers = new List<int>();
+        private List<Bus> busses = new List<Bus>();
+        #endregion
 
-        private List<Bus> busses;
-
-        public BusCompany()
-        {
-            busses = new List<Bus>();
-        }
-        public void Add(Bus bus)
+         public void Add(Bus bus)
         {
             if (numbers.Count != 0 && numbers.Contains(bus.Mispar))
             {
@@ -34,11 +31,5 @@ namespace Targil02_Tal_DotNetLab
             return this.GetEnumerator();
         }
 
-        //private List<BusLine> buses = new List<BusLine>();
-
-        //public List<BusLine> Busses
-        //{
-        //    get { return buses; }
-        //}
     }
 }

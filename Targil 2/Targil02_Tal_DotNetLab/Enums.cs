@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Targil02_Tal_DotNetLab
 {
-    public enum Zone
+    public enum Area
     {
         GENERAL,SOUTH,CENTER,JERUSALEM
     }

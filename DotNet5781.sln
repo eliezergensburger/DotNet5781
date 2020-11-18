@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tragil 3b", "Targil 3\Tragi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Targil3a_Lev", "Targil 3\Targil3a_Lev\Targil3a_Lev.csproj", "{7287A87A-011A-4B44-910A-6E432689CB91}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Targil3A_Lev2", "Targil 3\Targil3A_Lev2\Targil3A_Lev2.csproj", "{A1206C9B-25EB-49CD-B5C5-F6A8BAE11980}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -89,6 +91,10 @@ Global
 		{7287A87A-011A-4B44-910A-6E432689CB91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7287A87A-011A-4B44-910A-6E432689CB91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7287A87A-011A-4B44-910A-6E432689CB91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1206C9B-25EB-49CD-B5C5-F6A8BAE11980}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1206C9B-25EB-49CD-B5C5-F6A8BAE11980}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1206C9B-25EB-49CD-B5C5-F6A8BAE11980}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1206C9B-25EB-49CD-B5C5-F6A8BAE11980}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -106,6 +112,7 @@ Global
 		{FF6CE7DD-A399-4431-AAF9-C74B6BFAAD86} = {86A0FA1C-C633-4B0B-8EA7-AEF0DB4172AB}
 		{AB0045D9-4005-483A-B6EC-F0AC16A3D7AB} = {86A0FA1C-C633-4B0B-8EA7-AEF0DB4172AB}
 		{7287A87A-011A-4B44-910A-6E432689CB91} = {86A0FA1C-C633-4B0B-8EA7-AEF0DB4172AB}
+		{A1206C9B-25EB-49CD-B5C5-F6A8BAE11980} = {86A0FA1C-C633-4B0B-8EA7-AEF0DB4172AB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {51DF245D-FAFF-479D-9D60-ECEBD49AB202}
