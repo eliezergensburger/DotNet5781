@@ -1,0 +1,24 @@
+﻿<Window x:Class="Targil3b_version3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ListViewSortingSample" Height="200" Width="300">
+    <Grid Margin="10">
+        <ListView Name="lvUsers">
+            <ListView.View>
+                <GridView x:Name="usergridview">
+                    <GridViewColumn x:Name="ID" Header="Name" Width="120" DisplayMemberBinding="{Binding Name}" />
+                    <GridViewColumn Header="Age" Width="50" DisplayMemberBinding="{Binding Age}" />
+                    <GridViewColumn Width="50">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button   Content="Delek"  Margin="0"
+                                VerticalAlignment="Center"
+                                Click="Button_Click" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+         </ListView>
+    </Grid>
+</Window>

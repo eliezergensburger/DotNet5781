@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FF6CE7DD-A399-4431-AAF9-C74B6BFAAD86}</ProjectGuid>
+    <ProjectGuid>{7BB2BF65-9488-4D25-B6A7-B2B4E0E3C32C}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Tragil3A_Mivchar</RootNamespace>
-    <AssemblyName>Tragil3A_Mivchar</AssemblyName>
+    <RootNamespace>Targil3b_Alef</RootNamespace>
+    <AssemblyName>Targil3b_Alef</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -55,14 +55,22 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="AddBusWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Compile Include="AddBusWindow.xaml.cs">
+      <DependentUpon>AddBusWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Bus.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -95,10 +103,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Targil 1\Targil1_Tal\Targil1_Tal.csproj">
-      <Project>{fcea2ba8-2798-422f-afa0-4f674e12f6ad}</Project>
-      <Name>Targil1_Tal</Name>
-    </ProjectReference>
+    <Folder Include="Properties\DataSources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

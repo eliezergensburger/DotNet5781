@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Targil3A_Lev2"
         mc:Ignorable="d"
-        Title="מכון לב" Height="640" Width="800">
+        Title="מכון לב" Height="640" Width="800" Icon="images.jpg">
     <Grid x:Name="MainGrid">
         <Grid.RowDefinitions>
             <RowDefinition Height="5*"/>

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FF6CE7DD-A399-4431-AAF9-C74B6BFAAD86}</ProjectGuid>
+    <ProjectGuid>{3711828F-FD5C-492D-BF8B-B94DA6474422}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Tragil3A_Mivchar</RootNamespace>
-    <AssemblyName>Tragil3A_Mivchar</AssemblyName>
+    <RootNamespace>targil3b_zoombies</RootNamespace>
+    <AssemblyName>targil3b_zoombies</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -53,7 +53,6 @@
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
       <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -93,12 +92,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\Targil 1\Targil1_Tal\Targil1_Tal.csproj">
-      <Project>{fcea2ba8-2798-422f-afa0-4f674e12f6ad}</Project>
-      <Name>Targil1_Tal</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
