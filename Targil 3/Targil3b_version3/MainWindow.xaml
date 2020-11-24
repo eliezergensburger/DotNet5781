@@ -6,7 +6,7 @@
         <ListView Name="lvUsers">
             <ListView.View>
                 <GridView x:Name="usergridview">
-                    <GridViewColumn x:Name="ID" Header="Name" Width="120" DisplayMemberBinding="{Binding Name}" />
+                    <GridViewColumn Header="Name" Width="120" DisplayMemberBinding="{Binding Name}" />
                     <GridViewColumn Header="Age" Width="50" DisplayMemberBinding="{Binding Age}" />
                     <GridViewColumn Width="50">
                         <GridViewColumn.CellTemplate>

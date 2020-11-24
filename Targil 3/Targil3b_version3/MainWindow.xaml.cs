@@ -34,24 +34,11 @@ namespace Targil3b_version3
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            GridViewColumn gridView = (GridViewColumn)(sender as Button).Parent;
-            int x = 3;
-            int y = 10;
-            GridView gd = GetParent((Visual)sender);
-            MessageBox.Show(gd == null ? "Empty" : gd.Columns[0]);
+            var fxElt = sender as FrameworkElement;
+            User lineData = fxElt.DataContext as User;
+            MessageBox.Show(lineData.Name);
         }
-       
-
-        private GridView GetParent(Visual v)
-        {
-            while (v != null)
-            {
-                v = VisualTreeHelper.GetParent(v) as Visual;
-                if (v is GridView)
-                    break;
-            }
-            return v as GridView;
-        }
+           
 
     }
     public class User
