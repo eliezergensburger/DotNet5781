@@ -24,6 +24,11 @@ namespace Targil1_Tal
                 }
             }
         }
+        public  bool Exist(Bus other)
+        {
+            return this.license.CompareTo(other.license) == 0;
+        }
+
         public string License
         {
             get
