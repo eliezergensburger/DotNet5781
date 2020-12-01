@@ -33,8 +33,9 @@ namespace Targil3b_version3
             items.Add(new User() { Name = "John Doe", Age = 42 });
             items.Add(new User() { Name = "Jane Doe", Age = 39 });
             items.Add(new User() { Name = "Sammy Doe", Age = 13 });
-            items.Add(new User() { Name = "Donna Doe", Age = 13 });
-            lvUsers.ItemsSource = items;
+            items.Add(new User() { Name = "Donna Doe", Age = 12 });
+            //   lvUsers.ItemsSource = items;
+            this.DataContext = items;
         }
 
         private void MainWindow_Closing(object sender, CancelEventArgs e)
@@ -46,7 +47,7 @@ namespace Targil3b_version3
         {
             Button btn = e.Result as Button;
             btn.IsEnabled = true;
-            btn.Background = Brushes.Green;
+            btn.Background = Brushes.MintCream;
    //         throw new NotImplementedException();
         }
 
@@ -54,12 +55,14 @@ namespace Targil3b_version3
         {
             List<Object> lst = (List<object>)e.Argument;
 
-            int value = (int)lst[0];    //3000
-            Thread.Sleep(value);
-
             //idkun delek acharei hamiluy
-            User currentUser = (User)lst[1];
+            User currentUser = lst[0] as User; //linedata
+
             currentUser.Age += 10;
+
+            int value = (int)lst[1];    //3000
+
+            Thread.Sleep(value);
 
             e.Result = lst[2];          //btn
         }
@@ -76,12 +79,12 @@ namespace Targil3b_version3
 
         private void tidluk(User lineData, int time, Button btn)
         {
-            List<Object> lst = new List<object> { time, lineData, btn };
+            List<Object> lst = new List<object> { lineData, time, btn };
 
             BackgroundWorker tidluk = new BackgroundWorker();
             tidluk.DoWork += Tidluk_DoWork;
             tidluk.RunWorkerCompleted += Tidluk_RunWorkerCompleted;
-
+            btn.Background = Brushes.LawnGreen;
             tidluk.RunWorkerAsync(lst);
         } 
     }

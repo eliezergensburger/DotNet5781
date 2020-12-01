@@ -7,7 +7,7 @@
         <BitmapImage x:Key="ImageSource1" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="C:\Users\Eliezer\source\repos\eliezergensburger\DotNet5781\Targil 3\Targil3b_version3\Capture.PNG"/>
     </Window.Resources>
     <Grid Margin="10">
-        <ListView Name="lvUsers">
+        <ListView ItemsSource="{Binding}">
             <ListView.View>
                 <GridView x:Name="usergridview">
                     <GridViewColumn Header="Name" Width="120" DisplayMemberBinding="{Binding Name}" />
